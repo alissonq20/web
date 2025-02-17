@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES BASICAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cc7aca;
+        }
+        header {
+            background-color: #b5dae3;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .course-section {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .module-container {
+            display: flex;
+        }
+        .modules, aside {
+            flex: 1;
+            margin-right: 10px;
+        }
+        aside {
+            background-color: #dc9693;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        article {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        hr {
+            margin: 10px 0;
+        }
+        h5 {
+            margin: 0;
+            text-align: center;
+        }
+        center {
+            margin-top: 20px;
+        }
+        #foto {
+            border-radius: 10px;
+            box-shadow: 15px;
+            width: 200px;
+            height: 200px;
+        }
+        #name:hover {
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="name">Bienvenido deseas aprender más sobre las operaciones basicas</h2>
+    </header>
+    <nav>
+        <a href="index1.html">Inicio</a>
+        <a href="contacto.html">Contactos</a>
+        <a href="redes.html">Redes Sociales</a>
+    </nav>
+    <hr>
+    <h5>Alisson Stefania Quimbita</h5>
+    <hr>
+
+    <div class="container">
+
+        <div class="module-container">
+
+            <aside>
+                <h2>Temáticas que Encontrarás</h2>
+                <a href="suma.html"><h3>- Suma</h3></a></li>
+                <a href="resta.html"><h3>- Resta</h3></a></li>
+                <a href="multiplicacion.html"><h3>- Multiplicación</h3></a></li>
+                <a href="division.html"><h3>- División</h3></a></li>
+                <a href="potenciacion.html"><h3>- Potenciación</h3></a></li>
+                <a href="radicacion.html"><h3>- Radicación</h3></a></li>
+                <img id="foto" src="recursos/operaciones.png" alt="Operaciones matemáticas">
+            </aside>
+
+            <section id="potenciacion" class="course-section">
+                <div class="content">
+                    <marquee><h2>Potenciación</h2></marquee>
+                    <article>
+                    <h3>¿Qué es la potenciación?</h3>
+                    <p>La potenciación es una operación matemática que consiste en multiplicar un número por sí mismo un número determinado de veces, conocido como exponente.</p>
+                    <h3>Ejemplo de Potenciación</h3>
+                    <p>Si elevamos 2 a la potencia de 3, el resultado es 8.</p>
+                    <p>2<sup>3</sup> = 2 × 2 × 2 = 8</p>
+                    <h3>Propiedades de la Potenciación</h3>
+                    <ul>
+                        <li><strong>Producto de potencias de la misma base:</strong> a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup>.</li>
+                        <li><strong>Potencia de una potencia:</strong> (a<sup>m</sup>)<sup>n</sup> = a<sup>m×n</sup>.</li>
+                        <li><strong>Potencia de base diez:</strong> 10<sup>0</sup> = 1.</li>
+                    </ul>
+
+                    <img src="recursos/potenciacion.jpg" alt="Imagen de Ejemplo">
+                    <h3>Ejercicios Prácticos</h3>
+                    <p>Intenta resolver los siguientes ejercicios:</p>
+                    <ol>
+                        <li>2<sup>4</sup> = ?</li>
+                        <li>3<sup>3</sup> = ?</li>
+                        <li>5<sup>2</sup> = ?</li>
+                        <li>10<sup>1</sup> = ?</li>
+                    </ol>
+                    <h3>Soluciones</h3>
+                    <ol>
+                        <li>2<sup>4</sup> = 16</li>
+                        <li>3<sup>3</sup> = 27</li>
+                        <li>5<sup>2</sup> = 25</li>
+                        <li>10<sup>1</sup> = 10</li>
+                    </ol>
+                </div>
+                </article>
+            </section>
+        </div>
+
+    </div>
+    <footer>
+        <p id="direccion">Quito, Ecuador | Tel: <span>(+593) 958986964</span></p>
+    </footer>
+</body>
+</html>

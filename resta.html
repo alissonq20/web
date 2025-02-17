@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES BASICAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cc7aca;
+        }
+        header {
+            background-color: #b5dae3;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .course-section {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .module-container {
+            display: flex;
+        }
+        .modules, aside {
+            flex: 1;
+            margin-right: 10px;
+        }
+        aside {
+            background-color: #dc9693;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        article {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        hr {
+            margin: 10px 0;
+        }
+        h5 {
+            margin: 0;
+            text-align: center;
+        }
+        center {
+            margin-top: 20px;
+        }
+        #foto {
+            border-radius: 10px;
+            box-shadow: 15px;
+            width: 200px;
+            height: 200px;
+        }
+        #name:hover {
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .content img {
+            width: 400px;
+            height: auto;
+            float: right;
+            margin: 5px;
+        }
+
+        .cuadrado {
+        width: 80px;
+        height: 40px;
+        background: #b93b3b;
+        margin: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: cuadrado, rebote;
+        animation-duration: 3s, .3s;
+        animation-iteration-count: infinite, 20;
+        animation-timing-function: linear, ease-in-out;
+        animation-direction: alternate;
+        position: relative;
+        }
+
+        @keyframes cuadrado {
+        0% {
+        left: 0;
+        }
+        100% {
+        left: calc(100% - 240px);
+        }
+        }
+
+        @keyframes escalera {
+        from {
+        transform: translateY(0);
+        }
+        to {
+        transform: translateY(500px);
+        }
+        }
+
+        @keyframes rebote {
+        from {
+        transform: translateY(0);
+        }
+        to {
+        transform: translateY(100px) scale(1, .8);
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="name">Bienvenido deseas aprender más sobre las operaciones basicas</h2>
+    </header>
+    <nav>
+        <a href="index1.html">Inicio</a>
+        <a href="contacto.html">Contactos</a>
+        <a href="redes.html">Redes Sociales</a>
+    </nav>
+    <hr>
+    <h5>Alisson Stefania Quimbita</h5>
+    <hr>
+    
+    <div class="container">
+        
+        <div class="module-container">
+            
+            <aside>
+                <h2>Temáticas que Encontrarás</h2>
+                <a href="suma.html"><h3>- Suma</h3></a></li>
+                <a href="resta.html"><h3>- Resta</h3></a></li>
+                <a href="multiplicacion.html"><h3>- Multiplicación</h3></a></li>
+                <a href="division.html"><h3>- División</h3></a></li>
+                <a href="potenciacion.html"><h3>- Potenciación</h3></a></li>
+                <a href="radicacion.html"><h3>- Radicación</h3></a></li>
+                <img id="foto" src="recursos/operaciones.png" alt="Operaciones matemáticas">
+            </aside>
+
+            
+            <section id="resta" class="course-section">
+                <div class="content">
+                    <div class="cuadrado">La Resta</div>
+                    <article>
+                    <h3>¿Qué es la resta?</h3>
+                    <p>La resta es una operación matemática básica que consiste en quitar una cantidad de otra para encontrar la diferencia. El símbolo utilizado para la resta es el signo menos (-).</p>
+                    <h3>Ejemplo de Resta</h3>
+                    <p>Si restamos 5 de 8, el resultado es 3.</p>
+                    <pre>
+                         8
+                        - 5
+                        ----
+                         3
+                    </pre>
+                    <h3>Propiedades de la Resta</h3>
+                    <ul>
+                        <li><strong>No conmutativa:</strong> El orden de los términos sí altera el resultado. Es decir, 8 - 5 no es lo mismo que 5 - 8.</li>
+                        <li><strong>No asociativa:</strong> El modo en que se agrupan los términos sí altera el resultado. Por ejemplo, (10 - 3) - 2 no es lo mismo que 10 - (3 - 2).</li>
+                        <li><strong>Elemento Neutro:</strong> El cero es el elemento neutro de la resta, ya que cualquier número restado con cero da el mismo número. Por ejemplo, 7 - 0 = 7.</li>
+                    </ul>
+
+                    <img src="recursos/resta.jpg" alt="Imagen de Ejemplo">
+                    <h3>Ejercicios Prácticos</h3>
+                    <p>Intenta resolver los siguientes ejercicios:</p>
+                    <ol>
+                        <li>9 - 4 = ?</li>
+                        <li>15 - 6 = ?</li>
+                        <li>20 - 8 = ?</li>
+                        <li>30 - 25 = ?</li>
+                    </ol>
+                    <h3>Soluciones</h3>
+                    <ol>
+                        <li>9 - 4 = 5</li>
+                        <li>15 - 6 = 9</li>
+                        <li>20 - 8 = 12</li>
+                        <li>30 - 25 = 5</li>
+                    </ol>
+                </div>
+                </article>
+            </section>
+        </div>
+
+    </div>
+    <footer>
+        <p id="direccion">Quito, Ecuador | Tel: <span>(+593) 995448704</span></p>
+    </footer>
+</body>
+</html>

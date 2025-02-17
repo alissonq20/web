@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES BASICAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cc7aca;
+        }
+        header {
+            background-color: #b5dae3;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .course-section {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .module-container {
+            display: flex;
+        }
+        .modules, aside {
+            flex: 1;
+            margin-right: 10px;
+        }
+        aside {
+            background-color: #dc9693;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        article {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        hr {
+            margin: 10px 0;
+        }
+        h5 {
+            margin: 0;
+            text-align: center;
+        }
+        center {
+            margin-top: 20px;
+        }
+        #foto {
+            border-radius: 10px;
+            box-shadow: 15px;
+            width: 200px;
+            height: 200px;
+        }
+        #name:hover {
+            font-weight: bold;
+            color: white;
+        }
+
+        .content img {
+            width: 400px;
+            height: auto;
+            float: right;
+            margin: 5px;
+        }
+
+        .pelota {
+      width: 100px;
+      height: 60px;
+      border-radius: 50%;
+      transition: 1s;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(8, 7, 7);
+
+    }
+
+    .canasta {
+      position: relative;
+      height: 40px;
+      width: 65%;
+      /* transform: rotar | sesgar | posicion | tamaño */
+      transform: rotate(5deg) skew(10deg) translate(100px) scale(1.5);
+    }
+
+    .canasta:hover .pelota.a {
+      left: calc(50% - 100px);
+    }
+
+    .canasta:hover .pelota.b {
+        right: calc(50% - 100px);
+    }
+
+    .pelota.a {
+      background: rgb(207, 105, 137);
+      left: 0;
+    }
+
+    .pelota.b {
+      background: rgb(120, 120, 185);
+      right: 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="name">Bienvenido deseas aprender más sobre las operaciones basicas</h2>
+    </header>
+    <nav>
+        <a href="index1.html">Inicio</a>
+        <a href="contacto.html">Contactos</a>
+        <a href="redes.html">Redes Sociales</a>
+    </nav>
+    <hr>
+    <h5>Alisson Stefania Quimbita</h5>
+    <hr>
+
+    <div class="container">
+
+        <div class="module-container">
+
+            <aside>
+                <h2>Temáticas que Encontrarás</h2>
+                <a href="suma.html"><h3>- Suma</h3></a></li>
+                <a href="resta.html"><h3>- Resta</h3></a></li>
+                <a href="multiplicacion.html"><h3>- Multiplicación</h3></a></li>
+                <a href="division.html"><h3>- División</h3></a></li>
+                <a href="potenciacion.html"><h3>- Potenciación</h3></a></li>
+                <a href="radicacion.html"><h3>- Radicación</h3></a></li>
+                <img id="foto" src="recursos/operaciones.png" alt="Operaciones matemáticas">
+            </aside>
+
+            <section id="multiplicacion" class="course-section">
+                <div class="content">
+                    <div class="canasta">
+                    <div class="pelota a">LA</div>
+                    <div class="pelota b">MULTIPLICACIÓN</div>
+                    </div>
+                    <article>
+                    <h3>¿Qué es la multiplicación?</h3>
+                    <p>La multiplicación es una operación matemática básica que consiste en sumar un número varias veces. El símbolo utilizado para la multiplicación es el signo de multiplicar (× o *).</p>
+                    <h3>Ejemplo de Multiplicación</h3>
+                    <p>Si multiplicamos 3 por 4, el resultado es 12.</p>
+                    <pre>
+                         3
+                        ×4
+                        ----
+                        12
+                    </pre>
+                    <h3>Propiedades de la Multiplicación</h3>
+                    <ul>
+                        <li><strong>Conmutativa:</strong> El orden de los factores no altera el producto. Es decir, 3 × 4 = 4 × 3.</li>
+                        <li><strong>Asociativa:</strong> El modo en que se agrupan los factores no altera el producto. Por ejemplo, (2 × 3) × 4 = 2 × (3 × 4).</li>
+                        <li><strong>Elemento Neutro:</strong> El uno es el elemento neutro de la multiplicación, ya que cualquier número multiplicado por uno da el mismo número. Por ejemplo, 5 × 1 = 5.</li>
+                    </ul>
+
+                    <img src="recursos/multiplicacion.png" alt="Imagen de Ejemplo">
+                    <h3>Ejercicios Prácticos</h3>
+                    <p>Intenta resolver los siguientes ejercicios:</p>
+                    <ol>
+                        <li>4 × 3 = ?</li>
+                        <li>5 × 6 = ?</li>
+                        <li>7 × 8 = ?</li>
+                        <li>9 × 2 = ?</li>
+                    </ol>
+                    <h3>Soluciones</h3>
+                    <ol>
+                        <li>4 × 3 = 12</li>
+                        <li>5 × 6 = 30</li>
+                        <li>7 × 8 = 56</li>
+                        <li>9 × 2 = 18</li>
+                    </ol>
+                </div>
+                </article>
+            </section>
+        </div>
+
+    </div>
+    <footer>
+        <p id="direccion">Quito, Ecuador | Tel: <span>(+593) 9958986964</span></p>
+    </footer>
+</body>
+</html>

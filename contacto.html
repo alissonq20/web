@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactanos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+      min-height: 100vh;
+      background: url('recursos/gif1.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(165, 101, 160);
+    }
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      width: 100%;
+      padding: 20px 100px;
+      background: rgba(242, 91, 212, 0.1);
+      justify-content: space-between;
+      align-items: center;
+      color:#ac61c7;
+      
+    }
+    .header h2 {
+      font-size: 32px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(193, 20, 184);
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s, background-color 0.3s;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    nav ul li a:hover {
+      color: white;
+      background-color: rgb(202, 101, 177);
+    }
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin-top: 100px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: rgb(228, 231, 235);
+    }
+    .content img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    aside, .about {
+      flex: 1;
+      margin: 0 10px;
+      padding: 20px;
+      background-color: rgba(112, 192, 1, 0.418);
+      color: #fff;
+      border-radius: 10px;
+      text-align: justify;
+      line-height: 1.5;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .about {
+      background-color: rgba(118, 71, 247, 0.493);
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: rgba(211, 82, 22, 0.1);
+      padding: 10px 0;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+    /* Imagen con efecto de texto */
+    .image-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 50%;
+    }
+    .image-container .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+      border-radius: 50%;
+    }
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+    .content1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+      background-color: rgba(214, 100, 187, 0.493);
+      border-radius: 5px;
+      border: 5px rgb(121, 16, 206) dashed;
+      padding: 20px;
+      margin-top: 20px;
+      gap: 20px;
+    }
+    .content1 aside, .content1 .about {
+      flex: 1;
+      margin: 0 10px;
+      padding: 20px;
+      background-color: rgba(129, 84, 85, 0.418);
+      color: #fff;
+      border-radius: 10px;
+      text-align: justify;
+      line-height: 1.5;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .content1 .about {
+      background-color: rgba(118, 71, 247, 0.493);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <marquee><h2>Tu docente asignado sera</h2></marquee>
+    <nav>
+      <ul>
+        <li><a href="index1.html">PAGINA PRINCIPAL</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-content">
+
+    <div class="content">
+      <center><h2>LICENCIADA ALISSON </h2></center>
+
+      <div class="image-container">
+        <img src="recursos/ali.png" class="foto" alt="Foto del Profe Ali">
+        <div class="overlay">Mucho gusto conocerte</div>
+      </div>
+
+    </div>
+    <div class="content1">
+      <aside>
+        <h3>Alisson Stefania Quimbita Fonseca</h3>
+        <h4>Teléfono:</h4>
+        <p>095-898-694</p>
+        <h4>Correo electrónico:</h4>
+        <p><a href="mailto:alissonquimbita20@gmail.com">alissonquimbita20@gmail.com</a></p>
+        <br>
+        <audio controls style="width: 100%;">
+          <source src="recursos/musica.mp3" type="audio/mpeg" />
+          <source src="recursos/musica.mp3" type="audio/ogg" />
+          Tu navegador no soporta la reproducción de audio.
+        </audio>
+      </aside>
+      <div class="about">
+        <center>
+          <h3>Sobre Mí</h3>
+          <p>Soy estudiante de la Universidad Central del Ecuador, orgullosa de mi institución y carrera. En mi tiempo de estudio he notado las dificultades en matemáticas y por eso ofrezco mi ayuda a través de esta página web.</p>
+        </center>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

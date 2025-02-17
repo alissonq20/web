@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES BASICAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cc7aca;
+        }
+        header {
+            background-color: #b5dae3;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .course-section {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .module-container {
+            display: flex;
+        }
+        .modules, aside {
+            flex: 1;
+            margin-right: 10px;
+        }
+        aside {
+            background-color: #dc9693;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        article {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        hr {
+            margin: 10px 0;
+        }
+        h5 {
+            margin: 0;
+            text-align: center;
+        }
+        center {
+            margin-top: 20px;
+        }
+        #foto {
+            border-radius: 10px;
+            box-shadow: 15px;
+            width: 200px;
+            height: 200px;
+        }
+        #name:hover {
+            font-weight: bold;
+            color: white;
+        }
+
+        .content img {
+            width: 400px;
+            height: auto;
+            float: right;
+            margin: 5px;
+        }
+        .container:hover .cuadrado {
+
+         transform: rotate3d(1, 0, 0, 45deg);
+         transform: rotate3d(0, 1, 0, 45deg);
+         transform: rotate3d(0, 0, 1, 45deg);
+         }
+
+        .cuadrado {
+         width: 100px;
+         height: 30px;
+         background: #80b8c1;
+         margin: 20px;
+         transition: .3s;
+
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="name">Bienvenido deseas aprender más sobre las operaciones basicas</h2>
+    </header>
+    <nav>
+        <a href="index1.html">Inicio</a>
+        <a href="contacto.html">Contactos</a>
+        <a href="redes.html">Redes Sociales</a>
+    </nav>
+    <hr>
+    <h5>Alisson Stefania Quimbita</h5>
+    <hr>
+    
+    <div class="container">
+        
+        <div class="module-container">
+            
+            <aside>
+                <h2>Temáticas que Encontrarás</h2>
+                <a href="suma.html"><h3>- Suma</h3></a></li>
+                <a href="resta.html"><h3>- Resta</h3></a></li>
+                <a href="multiplicacion.html"><h3>- Multiplicación</h3></a></li>
+                <a href="division.html"><h3>- División</h3></a></li>
+                <a href="potenciacion.html"><h3>- Potenciación</h3></a></li>
+                <a href="radicacion.html"><h3>- Radicación</h3></a></li>
+                <img id="foto" src="recursos/operaciones.png" alt="Operaciones matemáticas">
+            </aside>
+
+            
+            <section id="division" class="course-section">
+                <div class="content">
+                    <center>
+                    <div class="cuadrado">LA DIVISIÓN</div></center>
+                    <article>
+                    <h3>¿Qué es la división?</h3>
+                    <p>La división es una operación matemática que consiste en repartir una cantidad en partes iguales o encontrar cuántas veces un número (dividendo) está contenido en otro número (divisor).</p>
+                    <h3>Ejemplo de División</h3>
+                    <p>Si dividimos 12 entre 3, el cociente es 4.</p>
+                    <pre>
+                     ----
+                    12|3
+                      |4
+                      ----
+                       3
+                    </pre>
+                    <h3>Propiedades de la División</h3>
+                    <ul>
+                        <li><strong>División como operación inversa de la multiplicación:</strong> Si multiplicamos el divisor por el cociente, obtenemos el dividendo.</li>
+                        <li><strong>División entre cero:</strong> No está definida en los números reales, ya que no se puede dividir ningún número entre cero.</li>
+                        <li><strong>Cociente exacto:</strong> Cuando el resto de la división es cero, se dice que la división es exacta.</li>
+                    </ul>
+
+                    <img src="recursos/division.png" alt="Imagen de Ejemplo">
+                    <h3>Ejercicios Prácticos</h3>
+                    <p>Intenta resolver los siguientes ejercicios:</p>
+                    <ol>
+                        <li>12 ÷ 3 = ?</li>
+                        <li>15 ÷ 5 = ?</li>
+                        <li>20 ÷ 4 = ?</li>
+                        <li>36 ÷ 6 = ?</li>
+                    </ol>
+                    <h3>Soluciones</h3>
+                    <ol>
+                        <li>12 ÷ 3 = 4</li>
+                        <li>15 ÷ 5 = 3</li>
+                        <li>20 ÷ 4 = 5</li>
+                        <li>36 ÷ 6 = 6</li>
+                    </ol>
+                </div>
+                </article>
+            </section>
+        </div>
+        
+        
+    </div>
+    <footer>
+        <p id="direccion">Quito, Ecuador | Tel: <span>(+593) 958986964</span></p>
+    </footer>
+</body>
+</html>
